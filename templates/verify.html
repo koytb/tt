@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Verification Code</title>
+</head>
+<body>
+    <h2>Enter the Verification Code</h2>
+    <form method="POST" action="{{ url_for('verify') }}">
+        <label for="code">Verification Code:</label><br>
+        <input type="text" id="code" name="code" placeholder="12345" required><br><br>
+        <input type="submit" value="Verify">
+    </form>
+</body>
+</html>
